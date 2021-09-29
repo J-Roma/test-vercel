@@ -7,7 +7,7 @@ const index = ({ newData }: any) => {
     <Layout>
       <div className="flex flex-col text-center w-full mt-20">
         <h1 className="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">
-          Prueba API Rick And Morty API con SSR
+          Prueba API Rick And Morty con SSG
         </h1>
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
