@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -24,9 +25,9 @@ const Navbar = () => {
                   aria-hidden="true"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M4 6h16M4 12h16M4 18h16"
                   />
                 </svg>
@@ -40,16 +41,16 @@ const Navbar = () => {
                   aria-hidden="true"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M6 18L18 6M6 6l12 12"
                   />
                 </svg>
               </button>
             </div>
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex-shrink-0 flex items-center">
+              {/* <div className="flex-shrink-0 flex items-center">
                 <img
                   className="block lg:hidden h-8 w-auto"
                   src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
@@ -60,37 +61,32 @@ const Navbar = () => {
                   src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
                   alt="Workflow"
                 />
-              </div>
+              </div> */}
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
-                  <a
-                    href="#"
-                    className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
-                    aria-current="page"
-                  >
-                    Products
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Team
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Projects
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Calendar
-                  </a>
+                  <Link href="/products">
+                    <a
+                      className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                      aria-current="page"
+                    >
+                      Rick&Morty API
+                    </a>
+                  </Link>
+                  <Link href="/">
+                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                      Team
+                    </a>
+                  </Link>
+                  <Link href="/">
+                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                      Projects
+                    </a>
+                  </Link>
+                  <Link href="/">
+                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                      Calendar
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
